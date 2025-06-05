@@ -1,6 +1,5 @@
 from meteostat import Hourly, Point
 from datetime import datetime
-import csv
 
 location = Point(17.511, 78.394)  # Hyderabad
 
