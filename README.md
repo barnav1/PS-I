@@ -21,9 +21,8 @@ This project uses an LSTM (Long Short-Term Memory) neural network trained on 8 w
 ├── process_data.py           ← normalizes and splits data, saves scaler
 ├── scaler_params.txt         ← saved MinMaxScaler values
 ├── lstm_model.py             ← builds, trains, and evaluates the LSTM model
-├── main.keras                ← saved Keras model after training
 ├── convert_model.py          ← converts model to TensorFlow Lite format
-├── converted_model.tflite    ← lightweight model for deployment
+├── LICENSE                   ← MIT License             
 ├── README.md                 ← this file
 ```
 
