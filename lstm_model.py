@@ -106,3 +106,20 @@ plt.ylabel("Loss")
 plt.xlabel("Epoch")
 plt.legend()
 plt.show()
+
+err = model.evaluate(X_test, y_test)
+print(f'NRMSD test:\t {math.sqrt(err):.3f}')
+
+prediction = model.predict(X_test)
+
+plt.figure(figsize=(10, 6))
+plt.plot(y_test, color = 'red', label = 'Real data')
+plt.plot(prediction, color = 'blue', label = 'Predicted temperature', alpha = 0.6)
+plt.title('Data Prediction')
+plt.xlabel('Time')
+plt.ylabel('Value')
+plt.legend()
+plt.show()
+
+
+model.save('main.keras')

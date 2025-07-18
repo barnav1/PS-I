@@ -1,0 +1,4 @@
+.venv/
+.saved_model/
+converted_model.tflite
+main.keras
